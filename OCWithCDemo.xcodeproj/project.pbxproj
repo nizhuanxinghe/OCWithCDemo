@@ -16,6 +16,9 @@
 		EE1125F61FA9C255006DB9B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE1125F41FA9C255006DB9B8 /* LaunchScreen.storyboard */; };
 		EE1126011FA9C255006DB9B8 /* OCWithCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1126001FA9C255006DB9B8 /* OCWithCDemoTests.m */; };
 		EE11260C1FA9C255006DB9B8 /* OCWithCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11260B1FA9C255006DB9B8 /* OCWithCDemoUITests.m */; };
+		EE1126211FA9C487006DB9B8 /* OCToCHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EE1126201FA9C487006DB9B8 /* OCToCHandler.m */; };
+		EE1126271FA9C615006DB9B8 /* SayJoke.c in Sources */ = {isa = PBXBuildFile; fileRef = EE1126251FA9C615006DB9B8 /* SayJoke.c */; };
+		EE11262C1FA9CF5D006DB9B8 /* OCManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EE11262B1FA9CF5D006DB9B8 /* OCManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,12 @@
 		EE1126071FA9C255006DB9B8 /* OCWithCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCWithCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE11260B1FA9C255006DB9B8 /* OCWithCDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCWithCDemoUITests.m; sourceTree = "<group>"; };
 		EE11260D1FA9C255006DB9B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE11261F1FA9C46F006DB9B8 /* OCToCHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCToCHandler.h; sourceTree = "<group>"; };
+		EE1126201FA9C487006DB9B8 /* OCToCHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCToCHandler.m; sourceTree = "<group>"; };
+		EE1126251FA9C615006DB9B8 /* SayJoke.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = SayJoke.c; sourceTree = "<group>"; };
+		EE1126261FA9C615006DB9B8 /* SayJoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SayJoke.h; sourceTree = "<group>"; };
+		EE11262A1FA9CF5D006DB9B8 /* OCManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCManager.h; sourceTree = "<group>"; };
+		EE11262B1FA9CF5D006DB9B8 /* OCManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +112,9 @@
 		EE1125E21FA9C255006DB9B8 /* OCWithCDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EE11261B1FA9C297006DB9B8 /* c */,
+				EE11261A1FA9C290006DB9B8 /* oc */,
+				EE1126191FA9C280006DB9B8 /* handler */,
 				EE1125E61FA9C255006DB9B8 /* AppDelegate.h */,
 				EE1125E71FA9C255006DB9B8 /* AppDelegate.m */,
 				EE1125E91FA9C255006DB9B8 /* ViewController.h */,
@@ -141,6 +153,33 @@
 				EE11260D1FA9C255006DB9B8 /* Info.plist */,
 			);
 			path = OCWithCDemoUITests;
+			sourceTree = "<group>";
+		};
+		EE1126191FA9C280006DB9B8 /* handler */ = {
+			isa = PBXGroup;
+			children = (
+				EE11261F1FA9C46F006DB9B8 /* OCToCHandler.h */,
+				EE1126201FA9C487006DB9B8 /* OCToCHandler.m */,
+			);
+			name = handler;
+			sourceTree = "<group>";
+		};
+		EE11261A1FA9C290006DB9B8 /* oc */ = {
+			isa = PBXGroup;
+			children = (
+				EE11262A1FA9CF5D006DB9B8 /* OCManager.h */,
+				EE11262B1FA9CF5D006DB9B8 /* OCManager.m */,
+			);
+			name = oc;
+			sourceTree = "<group>";
+		};
+		EE11261B1FA9C297006DB9B8 /* c */ = {
+			isa = PBXGroup;
+			children = (
+				EE1126251FA9C615006DB9B8 /* SayJoke.c */,
+				EE1126261FA9C615006DB9B8 /* SayJoke.h */,
+			);
+			name = c;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,6 +322,9 @@
 				EE1125E81FA9C255006DB9B8 /* AppDelegate.m in Sources */,
 				EE1125F11FA9C255006DB9B8 /* OCWithCDemo.xcdatamodeld in Sources */,
 				EE1125E51FA9C255006DB9B8 /* main.m in Sources */,
+				EE11262C1FA9CF5D006DB9B8 /* OCManager.m in Sources */,
+				EE1126271FA9C615006DB9B8 /* SayJoke.c in Sources */,
+				EE1126211FA9C487006DB9B8 /* OCToCHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +560,7 @@
 				EE1126121FA9C255006DB9B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE1126131FA9C255006DB9B8 /* Build configuration list for PBXNativeTarget "OCWithCDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +569,7 @@
 				EE1126151FA9C255006DB9B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EE1126161FA9C255006DB9B8 /* Build configuration list for PBXNativeTarget "OCWithCDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +578,7 @@
 				EE1126181FA9C255006DB9B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

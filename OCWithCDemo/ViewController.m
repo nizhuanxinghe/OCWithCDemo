@@ -19,7 +19,7 @@
     test();
     
     
-    NSLog(@"未完成bug");
+    NSLog(@"saijhfajdfhjlhfg");
 }
 
 

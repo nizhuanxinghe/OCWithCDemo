@@ -18,6 +18,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     test();
     
+<<<<<<< HEAD
+=======
+    
+    NSLog(@"未完成bug");
+>>>>>>> dev
 }
 
 

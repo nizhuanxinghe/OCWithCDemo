@@ -19,6 +19,7 @@ void peopleSayJoke(cchar* name, cchar* word)
 
 void test()
 {
+    
     peopleSayJoke(getUtf8Name(), getUtf8StrWord());
 }
 
